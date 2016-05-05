@@ -1,0 +1,369 @@
+body {
+	margin:0px;
+	padding:0px;
+	font-family:Georgia;
+}
+
+a {
+	text-decoration:none;
+	font-family:Georgia;
+}
+
+img {
+	border:none;
+}
+
+ul {
+	margin:0px;
+	padding:0px;
+}
+
+li {
+	list-style:none;
+}
+
+.clear {
+	clear:both;
+}
+
+#wrapper {
+	max-width:1000px;
+	margin:0 auto;
+}
+
+#header {
+	background:hsla(0,42%,86%,1.00);
+}
+
+#header .logo {
+	float:left;
+	height:60px;
+	line-height:60px;
+	border-bottom-width:thick
+}
+
+#header .logo img {
+	width:50px;
+	height:50px;
+	vertical-align:middle;
+	margin-left:5px;
+}
+
+#header .navbutton {
+	float:right;
+	display:none;
+	height:60px;
+	line-height:50px;
+}
+
+#header .navbutton img {
+	width:35px;
+	vertical-align:middle;
+	margin-right:10px;
+	cursor:pointer;
+}
+
+#header .nav {
+	float:right;
+	position:relative;
+	height:60px;
+	line-height:60px;
+}
+
+#header .nav ul {
+}
+
+#header .nav li {
+	float:left;
+	margin:0px 10px;
+	text-align:center;
+}
+
+#header .nav li a {
+	color:white;
+}
+
+#header .nav li.active a {
+	color:blue;
+}
+
+#header .nav li a:hover {
+	color:blue;
+}
+
+@media screen and (max-width:640px){
+	#header .navbutton {
+		display:block;
+	}
+	
+	#header .nav {
+		width:100%;
+		display:none;
+	}
+	
+	#header .nav ul {
+		background:#C63;
+		z-index:99;
+		width:100%;
+		position:absolute;
+	}
+	
+	#header .nav li {
+		width:100%;
+		float:none;
+		margin:0px;
+		height:40px;
+		line-height:40px;
+	}
+}
+
+@media screen and (min-width:641px) {
+	#header .nav {
+		display:block !important;
+	}
+}
+
+#slideshow {
+	height:300px;
+}
+
+#homediscount {
+	overflow:hidden;
+	margin-top:50px;
+}
+
+#homediscount .item {
+	width:25%;
+	float:left;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+#homediscount .item .frame {
+	background:url(../images/sea_bg.jpg) no-repeat;
+	background-size:100% 100%;
+	width:90%;
+	padding:5px;
+	margin:0 auto;
+	position:relative;
+	height:250px;
+	overflow:hidden;
+}
+
+#homediscount .item .frame .title {
+	font-weight:bold;
+	padding:5px 0px;
+}
+
+#homediscount .item .frame .discount {
+	font-size:1.6em;
+	font-weight:bold;
+	margin-top:10px;
+}
+
+#homediscount .item .frame .off {
+	font-size:1.4em;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+#homediscount .item .frame .bottom {
+	position:absolute;
+	bottom:10px;
+	width:100%;
+	text-align:center;
+}
+
+#homediscount .item .frame .bottom button {
+	border:none;
+	background:black;
+	color:white;
+	padding:5px 10px;
+	cursor:pointer;
+}
+
+@media screen and (max-width:800px) {
+	#homediscount .item {
+		width:50%;
+	}
+}
+
+@media screen and (max-width:600px) {
+	#homediscount .item {
+		width:100%;
+	}
+}
+
+#categery {
+	padding-top:10px;
+}
+
+#categery .contain {
+	margin-bottom:30px;
+}
+
+#categery .contain .title {
+	background:#999;
+	height:30px;
+	line-height:30px;
+	color:white;
+	text-align:center;
+}
+
+#categery .contain .items {
+	overflow:hidden;
+	border:1px solid #999;
+	padding-top:10px;
+}
+
+#categery .contain .items .item {
+	float:left;
+	width:25%;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+#categery .contain .items .item img {
+	width:80%;
+	height:250px;
+	border:1px solid #666;
+}
+
+@media screen and (max-width:800px) {
+	#categery .contain .items .item {
+		width:50%;
+	}
+}
+
+@media screen and (max-width:600px) {
+	#categery .contain .items .item {
+		width:100%;
+	}
+}
+
+#location {
+	padding:10px 0px;
+}
+
+#location iframe {
+	width:100%;
+	height:400px;
+	border:0px;
+}
+
+#sales {
+	overflow:hidden;
+	padding-top:10px;
+}
+
+#sales .item {
+	width:20%;
+	float:left;
+	margin-bottom:20px;
+}
+
+#sales .item .frame {
+	width:95%;
+	margin:0 auto;
+	border:1px solid #ccc;
+	height:300px;
+	overflow:hidden;
+}
+
+#sales .item .frame img {
+	width:100%;
+	height:200px;
+}
+
+#sales .item .frame .title {
+	font-weight:bold;
+}
+
+#sales .item .frame .oldprice {
+	text-decoration:line-through;
+}
+
+#sales .item .frame .newprice {
+	color:red;
+}
+
+#sales .item .frame .extra {
+	color:#F36;
+}
+
+@media screen and (max-width:800px) {
+	#sales .item {
+		width:25%;
+	}
+}
+
+@media screen and (max-width:600px) {
+	#sales .item {
+		width:50%;
+	}
+}
+
+@media screen and (max-width:500px) {
+	#sales .item {
+		width:100%;
+	}
+	
+	#sales .item .frame {
+		height:450px;
+	}
+	
+	#sales .item .frame img {
+		height:350px;
+	}
+}
+
+#feedback {
+	width:100%;
+	margin:0 auto;
+	margin-top:10px;
+}
+
+#feedback .contain {
+	margin-bottom:20px;
+}
+
+#feedback .contain .title {
+	font-size:1.2em;
+	font-weight:bold;
+}
+
+#feedback .contain input[type=text] {
+	width:99%;
+}
+
+#feedback .contain textarea {
+	width:99%;
+	height:200px;
+	resize:none;
+}
+
+#feedback .contain button {
+	background:blue;
+	color:white;
+	padding:10px 20px;
+	cursor:pointer;
+	border-radius:5px;
+	border:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
